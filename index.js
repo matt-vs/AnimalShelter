@@ -10,5 +10,5 @@ jQuery('#addAnimal').click(function () {
 
 function fetch(response) {
     const answer = response.responseXML.documentElement.getAttribute('answer').split('|');
-    jQuery('#msg').append('<p>' + answer[0] + ' has been created')
+    jQuery('#msg').append('<a href="' + answer[2] + '">View new Animal</a>')
 }

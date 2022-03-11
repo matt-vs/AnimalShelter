@@ -9,9 +9,9 @@ fetchUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         var newAnimal = new GLideRecord('u_animals');
         newAnimal.newRecord();
         newAnimal.name = animalName;
-        newAnimal.Type = animalType;
-        newAnimal.Age = animalAge;
-        newAnimal.Bio = animalBio;
+        newAnimal.type = animalType;
+        newAnimal.age = animalAge;
+        newAnimal.bio = animalBio;
         var animalNumber = newAnimal.number.getDisplayValue();
         var sysID = newAnimal.insert();
         var animalLink = newAnimal.getLink();
